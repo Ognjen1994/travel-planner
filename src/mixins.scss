@@ -1,0 +1,39 @@
+// palm-sized
+$breakpointMobileMax: 599px;
+
+// lap-sized
+$breakpointTabletMin: 600px;
+$breakpointTabletMax: 1024px;
+
+// desktop
+$breakpointDeskMin: 1025px;
+
+@mixin media-query-tablet-and-up {
+  @media (min-width: $breakpointTabletMin) {
+    @content;
+  }
+}
+
+@mixin media-query-desk-and-up {
+  @media (min-width: $breakpointDeskMin) {
+    @content;
+  }
+}
+
+@mixin media-query-mobile-only {
+  @media (max-width: $breakpointMobileMax) {
+    @content;
+  }
+}
+
+@mixin media-query-tablet-only {
+  @media (min-width: $breakpointTabletMin) and (max-width: $breakpointTabletMax) {
+    @content;
+  }
+}
+
+@mixin media-query-desk-only {
+  @media (min-width: $breakpointDeskMin) {
+    @content;
+  }
+}

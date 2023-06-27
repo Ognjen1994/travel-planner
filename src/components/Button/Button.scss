@@ -1,0 +1,14 @@
+.button {
+  height: 38px;
+  align-items: center;
+  border-radius: 4px;
+  background: #374151;
+  color: #fff;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+
+  &--disabled {
+    background: #e5e7eb;
+    cursor: initial;
+  }
+}

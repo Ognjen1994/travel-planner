@@ -1,0 +1,163 @@
+@import "../mixins.scss";
+
+$errorColor: #ff0000;
+
+.search-form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+
+    @include media-query-mobile-only {
+      display: initial;
+    }
+  }
+
+  & label {
+    display: block;
+  }
+
+  &__content {
+    display: flex;
+
+    @include media-query-mobile-only {
+      width: 100vw;
+    }
+
+    &__distance {
+      @include media-query-mobile-only {
+        width: 50px !important;
+      }
+
+      &__icon {
+        display: flex;
+        justify-content: end;
+      }
+    }
+
+    &__destinations {
+      margin-right: 84px;
+
+      & > div {
+        height: 80px;
+      }
+    }
+
+    & > div {
+      width: 324px;
+
+      @include media-query-mobile-only {
+        width: calc(100% - 2 * 100px);
+      }
+    }
+
+    & > div:first-child {
+      margin-right: 50px;
+    }
+
+    &__add-destination {
+      position: relative;
+      margin-top: 24px;
+      left: -16px;
+
+      @include media-query-mobile-only {
+        margin-top: initial;
+      }
+
+      & > button {
+        position: relative;
+      }
+
+      &__icon {
+        position: relative;
+        left: -58px;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid;
+        font-size: 18px;
+        line-height: 13px;
+      }
+    }
+
+    &__remove-btn {
+      position: absolute;
+      top: 34px;
+      right: -34px;
+    }
+
+    &__passengers {
+      height: 38px;
+    }
+
+    &__date {
+      height: 38px;
+    }
+  }
+
+  &__right-section {
+    width: 300px;
+
+    @include media-query-mobile-only {
+      width: 100vw;
+      margin-top: 44px;
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse;
+
+      & > div:nth-child(1) {
+        margin-left: 12px;
+      }
+
+      & > div:nth-child(2) {
+        margin-right: 12px;
+      }
+    }
+
+    & > div:nth-child(-n + 2) {
+      height: 80px;
+    }
+
+    &__input {
+      position: relative;
+
+      &__date {
+        height: 38px;
+      }
+
+      &__passenger {
+        height: 38px;
+      }
+    }
+  }
+
+  &__submit {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 32px;
+
+    @include media-query-mobile-only {
+      width: calc(100% - 2 * 12px);
+      justify-content: center;
+    }
+  }
+
+  &__error-message {
+    position: absolute;
+    bottom: 100px;
+    color: $errorColor;
+  }
+
+  .error {
+    border: 1px solid $errorColor;
+  }
+
+  .error-message--color {
+    color: $errorColor;
+  }
+}

@@ -1,0 +1,13 @@
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+  color: var(--primary-color);
+  font-size: 18px;
+}

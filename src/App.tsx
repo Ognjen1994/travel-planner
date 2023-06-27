@@ -1,7 +1,7 @@
 import "./App.scss";
 
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom"; // HashRouter has been used because of GitHub Pages
 
 import SearchForm from "./pages/SearchForm";
 import SearchResult from "./pages/SearchResult";

@@ -26,7 +26,7 @@ To get started with Travel Planner App, follow the instructions below:
 
 ## Usage
 
-To use Travel Buddy App, follow these steps:
+To use Travel Planner App, follow these steps:
 
 1. On the home page, you will see a search form.
 2. Fill in the following details in the search form:

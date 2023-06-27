@@ -1,90 +1,67 @@
-# React TypeScript template with Vite
+# Travel Planner
 
-This is a [React](https://reactjs.org) + [TypeScript](https://www.typescriptlang.org/) boilerplate built with [Vite](https://vitejs.dev).
+Welcome to Travel Planner App! This is a single-page application (SPA) built with React and TypeScript that allows users to perform searches for routes between multiple cities, helping them plan their travel. The app consists of two pages: the search form (home page) and the search results page.
 
-## What's inside?
+## Installation
 
-- [ReactJS](https://reactjs.org)
-- [Vite](https://vitejs.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [Jest](https://jestjs.io)
-- [Testing Library](https://testing-library.com)
-- [Cypress](https://www.cypress.io)
-- [ESLint](https://eslint.org)
-- [Prettier](https://prettier.io)
-- [Polyfills](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy#readme)
+To get started with Travel Planner App, follow the instructions below:
 
-## Getting started
-
-1. Create the project.
-
-   ```bash
-   npx degit fabien-ml/react-ts-vite-template my-app
-   ```
-
-2. Access the project directory.
-
-   ```bash
-   cd my-app
-   ```
-
-3. Initialize a git repository.
-
-   ```bash
-   git init
-   ```
-
-4. Install dependencies.
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-5. Start dev server with hot reload at http://localhost:3000.
+2. Start the development server:
+
    ```bash
    npm run dev
    ```
 
-## Recommended VS Code extensions
+3. Open the app in your browser:
 
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+   ```
+   http://localhost:3000
+   ```
 
-## Other commands
+## Usage
 
-### Lint commands
+To use Travel Buddy App, follow these steps:
+
+1. On the home page, you will see a search form.
+2. Fill in the following details in the search form:
+   City of origin: Select the city of origin from the searchable dropdown list.
+   Intermediate cities: (Optional) Add and remove multiple intermediate cities for your route.
+   City of destination: Select the city of destination from the searchable dropdown list.
+   Date of the trip: Select a future date for your trip.
+   Number of passengers: Enter the number of passengers, which should be greater than 0.
+3. Click the submit button to navigate to the search results page.
+4. On the search results page, you will see the details of your search, including the city of origin, intermediate cities, city of destination, date of the trip, and number of passengers.
+
+## Scripts
+
+In the project directory, you can run the following scripts:
+
+```bash
+npm test:unit
+```
+
+Launches the test runner in the watch mode.
+
+```bash
+npm run test:unit:coverage
+```
+
+This command is used to run unit tests with coverage reports using Jest
 
 ```bash
 npm run lint
 ```
 
-### Build commands
+Runs the linter on the src directory.
 
 ```bash
-npm run build
+npm run prettier
 ```
 
-### Run the app in production mode at http://localhost:3000.
-
-```bash
-npm run serve
-```
-
-### Test commands
-
-- Run unit tests and watch
-  ```bash
-  npm run test:unit
-  ```
-- Run unit tests with coverage
-  ```bash
-  npm run test:unit:coverage
-  ```
-- Run e2e tests
-  ```bash
-  npm run test:e2e
-  ```
-
-## License
-
-This project is licensed under the MIT License.
+Runs the Prettier code formatter on the src directory.

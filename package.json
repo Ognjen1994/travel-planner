@@ -7,14 +7,11 @@
   },
   "scripts": {
     "build": "npm run typecheck && vite build",
-    "commit": "git-cz",
     "dev": "vite",
     "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
     "lint": "eslint . --ext .ts,.tsx --fix --ignore-path .gitignore",
-    "prepare": "husky install",
     "serve": "npm run build && vite preview --port 3000",
     "test:unit": "jest --watchAll",
-    "test:unit:ci": "jest",
     "test:unit:coverage": "jest --silent --watchAll=false --coverage",
     "typecheck": "tsc --noEmit"
   },

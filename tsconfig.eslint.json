@@ -6,8 +6,6 @@
   },
   "include": [
     "src",
-    "cypress",
-    "cypress.config.ts",
     "jest.setup.ts",
     "vite.config.ts"
   ],

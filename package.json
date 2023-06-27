@@ -10,7 +10,7 @@
     "build": "npm run typecheck && vite build",
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
     "lint": "eslint . --ext .ts,.tsx --fix --ignore-path .gitignore",
     "serve": "npm run build && vite preview --port 3000",
